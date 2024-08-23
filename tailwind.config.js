@@ -27,10 +27,34 @@ module.exports = {
         greycolor: '#3b3b3b',
         darkgreycolor: '#181818',
       },
+      backgroundImage: {
+        'anchor-gradient': 'linear-gradient(transparent 50%, #66fcf1 50%)',
+      },
+      backgroundSize: {
+        'auto-175': 'auto 175%',
+      },
+      backgroundPosition: {
+        'y-100': '0 100%',
+      },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         ibm: ['IBM Plex Mono', 'monospace'],
         inconsolata: ['Inconsolata', 'monospace'],
+      },
+      animation: {
+        'slide-from-down-and-fade-1':
+          'slide-from-down-and-fade 0.6s ease-in-out 0.1s both',
+        'slide-from-down-and-fade-2':
+          'slide-from-down-and-fade 0.6s ease-in-out 0.2s both',
+        'slide-from-down-and-fade-3':
+          'slide-from-down-and-fade 0.6s ease-in-out 0.3s both',
+        'slide-from-down-and-fade-4':
+          'slide-from-down-and-fade 0.6s ease-in-out 0.4s both',
+        'slide-from-down-and-fade-5':
+          'slide-from-down-and-fade 0.6s ease-in-out 0.5s both',
+      },
+      screens: {
+        'desktop': '1440px',
       },
     },
   },
