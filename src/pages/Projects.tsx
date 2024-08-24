@@ -16,9 +16,9 @@ export default function Projects() {
       <Breadcrumb className="px-4 animate-slide-from-down-and-fade-1">
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/" className="dark:text-darkwhitecolor dark:hover:text-whitecolor">Home</BreadcrumbLink>
+            <BreadcrumbLink href="/" className="text-darkwhitecolor hover:text-black dark:hover:text-whitecolor">Home</BreadcrumbLink>
           </BreadcrumbItem>
-          <BreadcrumbSeparator className="dark:text-darkwhitecolor" />
+          <BreadcrumbSeparator className="text-darkwhitecolor" />
           <BreadcrumbItem>
             <BreadcrumbPage className="dark:text-whitecolor">Projects</BreadcrumbPage>
           </BreadcrumbItem>
