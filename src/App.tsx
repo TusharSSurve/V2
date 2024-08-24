@@ -1,25 +1,18 @@
-import Footer from "./components/global/Footer";
-import Header from "./components/global/Header";
-import Particles from "./components/magicui/particles"
-import Main from "./components/Main";
-import { useDarkmode } from "./lib/hooks";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Layout from "./Layout";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 
 function App() {
-  const isDark = useDarkmode();
   return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-      <Particles
-        className="fixed inset-0 h-screen overflow-hidden -z-10 opacity-70"
-        quantity={45}
-        staticity={250}
-        ease={50}
-        color={`${isDark ? "#66fcf1" : ""}`}
-        refresh
-      />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+        </Route>
+      </Routes>
+    </Router>
   )
 }
 

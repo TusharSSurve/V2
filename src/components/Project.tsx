@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import H2 from './global/H2';
 import ProjectCard from './global/ProjectCard';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 const projects = [
   {
     "id": 9,
@@ -112,7 +113,7 @@ const projects = [
     ]
   }
 ]
-export default function Projects() {
+export default function Project() {
   return (
     <section className='animate-slide-from-down-and-fade-3 space-y-2 px-4'>
       <H2>Featured Projects</H2>
@@ -121,7 +122,10 @@ export default function Projects() {
           return <ProjectCard project={project} key={project.id} />
         })}
       </div>
-      <a href="/" className='flex justify-start items-center gap-[2px] whitespace-nowrap text-sm transition-colors text-darkwhitecolor underline-offset-4 underline py-3 hover:text-whitecolor'>All projects<FontAwesomeIcon icon={faArrowRight} className="w-3 h-3 -rotate-45" /></a>
+      <Link to="/projects" className='flex justify-start items-center gap-[2px] whitespace-nowrap text-sm transition-colors text-darkwhitecolor underline-offset-4 underline py-3 hover:text-whitecolor'>
+        All projects
+        <FontAwesomeIcon icon={faArrowRight} className="w-3 h-3 -rotate-45" />
+      </Link>
     </section>
   )
 }

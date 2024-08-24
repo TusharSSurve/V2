@@ -1,10 +1,11 @@
 import { ProjectCardProps } from "@/lib/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faKaggle } from '@fortawesome/free-brands-svg-icons'
+import { cn } from "@/lib/utils";
 
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ProjectCard({ project, className }: ProjectCardProps) {
   return (
-    <div className="rounded-[4px] bg-darkgreycolor py-8 px-7 flex flex-col justify-between w-full desktop:max-w-[337px] border md:w-[48%] md:min-w-[310px] border-greycolor" >
+    <div className={cn("rounded-[4px] bg-darkgreycolor py-8 px-7 flex flex-col justify-between w-full desktop:max-w-[337px] border md:w-[48%] md:min-w-[310px] border-greycolor", className)} >
       <div>
         <div className="flex justify-between items-center">
           <time className="text-neoncolor font-ibm text-sm">{project.year}</time>
@@ -12,7 +13,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             {
               project.wlinks.map(wl => {
                 return <li key={wl.id}>
-                  <a href={wl.link} target="_blank" rel="noopener noreferrer">
+                  <a href={wl.link} target="_blank" rel="noopener noreferrer" aria-label={wl.icon}>
                     {wl.icon === 'github' && <FontAwesomeIcon icon={faGithub} className="w-5 h-5 text-darkwhitecolor hover:text-neoncolor" />}
                     {wl.icon === 'kaggle' && <FontAwesomeIcon icon={faKaggle} className="w-5 h-5 text-darkwhitecolor hover:text-neoncolor" />}
                     {wl.icon === 'tableau' && <FontAwesomeIcon icon={faKaggle} className="w-5 h-5 text-darkwhitecolor hover:text-neoncolor" />}

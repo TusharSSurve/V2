@@ -8,21 +8,25 @@ const SOCIAL_LINKS = [
   {
     id: 1,
     link: "https://github.com/TusharSSurve",
+    name: "Github",
     icon: faGithub
   },
   {
     id: 2,
     link: "https://www.linkedin.com/in/surve-tushar/",
+    name: "LinkedIn",
     icon: faLinkedin
   },
   {
     id: 3,
     link: "https://www.kaggle.com/tusharsurve",
+    name: "Kaggle",
     icon: faKaggle
   },
   {
     id: 4,
     link: "mailto:ttusharsurve567@gmail.com",
+    name: "Mail",
     icon: faPaperPlane
   }
 ];
@@ -36,7 +40,7 @@ export default function Footer() {
         {
           SOCIAL_LINKS.map(slink => {
             return <li key={slink.id}>
-              <a href={slink.link} className="w-10 h-10 text-darkgreycolor/75 dark:text-darkwhitecolor flex justify-center items-center rounded-full transition-all hover:text-greycolor hover:bg-greycolor/25 dark:hover:bg-greycolor ">
+              <a href={slink.link} aria-label={slink.name} className="w-10 h-10 text-darkgreycolor/75 dark:text-darkwhitecolor flex justify-center items-center rounded-full transition-all hover:text-greycolor hover:bg-greycolor/25 dark:hover:bg-greycolor ">
                 <FontAwesomeIcon icon={slink.icon} className='w-6 h-6' />
               </a>
             </li>

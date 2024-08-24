@@ -21,4 +21,5 @@ type ProjectCardDetail = {
 
 export type ProjectCardProps = {
   project: ProjectCardDetail
+  className?: string
 }
