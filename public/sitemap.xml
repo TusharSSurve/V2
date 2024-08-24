@@ -1,6 +1,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>https://tusharssurve.github.io/portfolio/</loc>
+        <loc>https://tusharsurve.vercel.app/</loc>
+        <changefreq>always</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://tusharsurve.vercel.app/projects</loc>
         <changefreq>always</changefreq>
         <priority>1</priority>
     </url>
