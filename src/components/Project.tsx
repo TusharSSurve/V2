@@ -122,10 +122,12 @@ export default function Project() {
           return <ProjectCard project={project} key={project.id} />
         })}
       </div>
-      <Link to="/projects" className='flex justify-start items-center gap-[2px] whitespace-nowrap text-sm transition-colors text-darkwhitecolor underline-offset-4 underline py-3 hover:text-whitecolor'>
-        All projects
-        <FontAwesomeIcon icon={faArrowRight} className="w-3 h-3 -rotate-45" />
-      </Link>
+      <div className='py-3'>
+        <Link to="/projects" className='flex justify-start items-center gap-[2px] whitespace-nowrap text-sm transition-colors text-black/70 dark:text-darkwhitecolor underline-offset-4 underline hover:text-darkgreycolor dark:hover:text-whitecolor w-fit'>
+          All projects
+          <FontAwesomeIcon icon={faArrowRight} className="w-3 h-3 -rotate-45" />
+        </Link>
+      </div>
     </section>
   )
 }

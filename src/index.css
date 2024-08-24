@@ -75,6 +75,10 @@ mark {
   padding: 0 0.2em;
 }
 
-.anchor {
+.dark .anchor {
   @apply bg-anchor-gradient text-neoncolor hover:text-blackcolor bg-auto-175 transition-all duration-300 ease-in-out hover:bg-y-100;
+}
+
+.light .anchor {
+  @apply text-blackcolor font-medium underline;
 }

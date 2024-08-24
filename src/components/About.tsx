@@ -47,7 +47,7 @@ export default function About() {
         <ul className="grid grid-cols-2 gap-y-2 mt-5">
           {
             technologies.map(t => {
-              return <li key={t.id} className="text-sm text-greycolor dark:text-darkwhitecolor relative mb-[10px] pl-5 before:content-['▹'] before:text-neoncolor before:absolute before:left-0">{t.tech}</li>
+              return <li key={t.id} className="text-sm text-greycolor dark:text-darkwhitecolor relative mb-[10px] pl-5 before:content-['▹'] before:dark:text-neoncolor before:absolute before:left-0">{t.tech}</li>
             })
           }
         </ul>
