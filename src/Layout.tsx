@@ -3,7 +3,7 @@ import Footer from "./components/global/Footer";
 import Header from "./components/global/Header";
 import Particles from "./components/magicui/particles";
 import { useDarkmode } from "./lib/hooks";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 export default function Layout() {
   const isDark = useDarkmode();
