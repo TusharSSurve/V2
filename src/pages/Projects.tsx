@@ -27,7 +27,7 @@ export default function Projects() {
       <h1 className="px-4 animate-slide-from-down-and-fade-2 scroll-m-20  text-4xl font-bold tracking-tight dark:text-whitecolor">All Projects</h1>
       <div className="flex flex-col gap-3 px-4 animate-slide-from-down-and-fade-3 pt-12">
         {projects.map(project => {
-          return <ProjectCard project={project} key={project.id} className="desktop:w-full desktop:max-w-full py-4 px-4 rounded-lg" />
+          return <ProjectCard project={project} key={project.id} className="desktop:w-full desktop:max-w-full md:w-full py-4 px-4 rounded-lg" />
         })}
       </div>
     </>
