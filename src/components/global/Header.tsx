@@ -11,7 +11,7 @@ export default function Header() {
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-4">
           <Avatar className='relative flex shrink-0 overflow-hidden rounded-full size-14' >
-            <AvatarImage src={Profile} height={56} width={56} />
+            <AvatarImage src={Profile} height={56} width={56} alt="Tushar Surve Profile" />
             <AvatarFallback className="flex justify-center items-center mx-auto bg-greycolor rounded-full size-14 text-whitecolor">TS</AvatarFallback>
           </Avatar>
           <div>
@@ -19,7 +19,7 @@ export default function Header() {
             <p className="mt-0.5 text-sm text-greycolor dark:text-darkwhitecolor">Frontend Developer</p>
           </div>
         </div>
-        <a href={resume} className="rounded-md border size-8 border-darkwhitecolor/20 flex transition-all items-center justify-center hover:bg-darkgreycolor">
+        <a href={resume} aria-label="Resume Download" className="rounded-md border size-8 border-darkwhitecolor/20 flex transition-all items-center justify-center hover:bg-darkgreycolor">
           <FontAwesomeIcon icon={faDownload} className='w-4 h-4 text-darkgreycolor/75 dark:text-darkwhitecolor' />
         </a>
       </div>
