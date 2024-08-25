@@ -23,3 +23,21 @@ export type ProjectCardProps = {
   project: ProjectCardDetail
   className?: string
 }
+
+export type ExperienceProps = {
+  id: number;
+  job: string;
+  job_link: string;
+  job_title: string;
+  range: string;
+  role: string;
+  tech: {
+    id: number;
+    skill: string;
+  }[];
+}
+
+export type ExperienceCardProps = {
+  experience: ExperienceProps;
+  className?: string
+}

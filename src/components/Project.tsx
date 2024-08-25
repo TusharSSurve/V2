@@ -115,9 +115,9 @@ const projects = [
 ]
 export default function Project() {
   return (
-    <section className='animate-slide-from-down-and-fade-3 space-y-2 px-4'>
+    <section className='animate-slide-from-down-and-fade-4 space-y-2 px-4'>
       <H2>Featured Projects</H2>
-      <div className='flex flex-wrap gap-[14px] justify-center'>
+      <div className='flex flex-wrap gap-[14px] justify-center pt-2'>
         {projects.map(project => {
           return <ProjectCard project={project} key={project.id} />
         })}
