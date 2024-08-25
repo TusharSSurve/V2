@@ -12,7 +12,7 @@ export default function Footer() {
         {
           SOCIAL_LINKS.map(slink => {
             return <li key={slink.id}>
-              <a href={slink.link} aria-label={slink.name} className="w-10 h-10 text-darkgreycolor/75 dark:text-darkwhitecolor flex justify-center items-center rounded-full transition-all hover:text-greycolor hover:bg-greycolor/25 dark:hover:bg-greycolor ">
+              <a href={slink.link} aria-label={slink.name} className="w-10 h-10 text-darkgreycolor/75 dark:text-darkwhitecolor flex justify-center items-center rounded-full transition-all hover:text-greycolor hover:bg-greycolor/25 dark:hover:bg-darkgreycolor ">
                 <FontAwesomeIcon icon={slink.icon} className='w-6 h-6' />
               </a>
             </li>
