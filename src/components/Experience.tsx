@@ -16,7 +16,7 @@ export default function Experience() {
         })}
       </div>
       <div className='py-3'>
-        <a href={resume} className='flex justify-start items-center gap-[2px] whitespace-nowrap text-sm transition-colors text-black/70 dark:text-darkwhitecolor underline-offset-4 underline hover:text-darkgreycolor dark:hover:text-whitecolor w-fit'>
+        <a href={resume} className='flex justify-start items-center gap-[2px] whitespace-nowrap text-sm transition-colors text-black/70 dark:text-darkwhitecolor underline-offset-4 underline hover:text-darkgreycolor dark:hover:text-whitecolor w-fit' target="_blank" rel="noopener noreferrer">
           View Full Resume
           <FontAwesomeIcon icon={faArrowRight} className="w-3 h-3 -rotate-45" />
         </a>

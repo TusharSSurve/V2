@@ -15,7 +15,8 @@ export default function Layout() {
       <main className={`flex flex-col ${location === '/' ? 'gap-12' : ''} ${location === '/projects' ? 'gap-4' : ''}`}>
         <Outlet />
       </main>
-      <Footer />
+      {(location === '/' || location === '/projects') && <Footer />}
+
       <Particles
         className="fixed inset-0 h-screen overflow-hidden -z-10 opacity-70"
         quantity={45}
