@@ -8,9 +8,13 @@ import {
 } from "@/components/ui/breadcrumb"
 import ProjectData from '../data/work.json';
 import ProjectCard from "@/components/global/ProjectCard";
+import { useMeta } from "@/lib/hooks";
 
 export default function Projects() {
   const projects = ProjectData;
+  useMeta({
+    title: 'Tushar Surve | Projects',
+  })
   return (
     <>
       <Breadcrumb className="px-4 animate-slide-from-down-and-fade-1">

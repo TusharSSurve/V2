@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import ScrollToTop from "./components/global/ScrollToTop";
+import Error from "./pages/Error";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="*" element={<Error />} />
         </Route>
       </Routes>
     </Router>
