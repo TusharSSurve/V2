@@ -1,6 +1,7 @@
 import { ProjectCardProps } from "@/lib/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faKaggle } from '@fortawesome/free-brands-svg-icons'
+import Tableau from '../../assets/tableau.svg?react'
 import { cn } from "@/lib/utils";
 
 export default function ProjectCard({ project, className }: ProjectCardProps) {
@@ -16,7 +17,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
                   <a href={wl.link} target="_blank" rel="noopener noreferrer" aria-label={wl.icon}>
                     {wl.icon === 'github' && <FontAwesomeIcon icon={faGithub} className="w-5 h-5 text-darkwhitecolor hover:text-darkgreycolor dark:hover:text-neoncolor" />}
                     {wl.icon === 'kaggle' && <FontAwesomeIcon icon={faKaggle} className="w-5 h-5 text-darkwhitecolor hover:text-darkgreycolor dark:hover:text-neoncolor" />}
-                    {wl.icon === 'tableau' && <FontAwesomeIcon icon={faKaggle} className="w-5 h-5 text-darkwhitecolor hover:text-darkgreycolor dark:hover:text-neoncolor" />}
+                    {wl.icon === 'tableau' && <div className="tableau w-5 h-5"><Tableau /></div>}
                   </a>
                 </li>
               })

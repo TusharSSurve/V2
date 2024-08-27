@@ -79,6 +79,22 @@ mark {
   padding: 0 0.2em;
 }
 
+.tableau svg {
+  @apply w-5 h-5;
+}
+
+.tableau path {
+  fill: #9c9c9c;
+}
+
+.dark .tableau:hover path {
+  fill: #66fcf1;
+}
+
+.light .tableau:hover path {
+  fill: #181818;
+}
+
 .dark .anchor {
   @apply bg-anchor-gradient text-neoncolor hover:text-blackcolor bg-auto-175 transition-all duration-300 ease-in-out hover:bg-y-100;
 }
