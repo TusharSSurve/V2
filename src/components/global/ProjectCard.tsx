@@ -31,7 +31,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
         <ul className="flex flex-wrap gap-[11px] mt-5">
           {
             project.langs.map(wl => {
-              return <li key={wl.id} className="font-inconsolata text-xs text-darkneoncolor dark:text-neoncolor border border-darkneoncolor dark:border-neoncolor py-1 px-[7px] rounded-[3px]">
+              return <li key={wl.id} className="font-inconsolata text-xs text-darkneoncolor dark:text-neoncolor border border-darkneoncolor dark:border-neoncolor py-1 px-[7px] rounded-full">
                 {wl.lang}
               </li>
             })
