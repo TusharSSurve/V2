@@ -28,7 +28,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
         <p className="dark:text-darkwhitecolor">{project.para}</p>
       </div>
       <div>
-        <ul className="flex flex-wrap gap-[11px] mt-5">
+        <ul className="flex flex-wrap gap-[7px] mt-5">
           {
             project.langs.map(wl => {
               return <li key={wl.id} className="font-inconsolata text-xs text-darkneoncolor dark:text-neoncolor border border-darkneoncolor dark:border-neoncolor py-1 px-[7px] rounded-full">
