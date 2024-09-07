@@ -5,6 +5,33 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 const projects = [
   {
+    "id": 4,
+    "year": "2024",
+    "wlinks": [
+      {
+        "id": 1,
+        "link": "https://github.com/TusharSSurve/PaperPupil",
+        "icon": "github"
+      }
+    ],
+    "title": "PaperPupil",
+    "para": "Effortlessly interact with PDFs for study, research, and insights.",
+    "langs": [
+      {
+        "id": 1,
+        "lang": "Next.JS"
+      },
+      {
+        "id": 2,
+        "lang": "React.JS"
+      },
+      {
+        "id": 3,
+        "lang": "TypeScript"
+      }
+    ]
+  },
+  {
     "id": 9,
     "year": "2020",
     "wlinks": [
@@ -27,37 +54,6 @@ const projects = [
       },
       {
         "id": 3,
-        "lang": "ML/DL"
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "year": "2021",
-    "wlinks": [
-      {
-        "id": 1,
-        "link": "https://github.com/TusharSSurve/Gender-Classification-With-Flutter",
-        "icon": "github"
-      }
-    ],
-    "title": "Gender Classification",
-    "para": "A Flutter based mobile app for gender classification.",
-    "langs": [
-      {
-        "id": 1,
-        "lang": "Python"
-      },
-      {
-        "id": 2,
-        "lang": "Flutter"
-      },
-      {
-        "id": 3,
-        "lang": "Dart"
-      },
-      {
-        "id": 4,
         "lang": "ML/DL"
       }
     ]

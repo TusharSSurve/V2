@@ -1,5 +1,40 @@
 [
   {
+    "id": 11,
+    "year": "2024",
+    "wlinks": [
+      {
+        "id": 1,
+        "link": "https://github.com/TusharSSurve/PaperPupil",
+        "icon": "github"
+      }
+    ],
+    "title": "PaperPupil",
+    "para": "Effortlessly interact with PDFs for study, research, and insights.",
+    "langs": [
+      {
+        "id": 0,
+        "lang": "Next.JS"
+      },
+      {
+        "id": 1,
+        "lang": "React.JS"
+      },
+      {
+        "id": 2,
+        "lang": "TypeScript"
+      },
+      {
+        "id": 3,
+        "lang": "Tailwind CSS"
+      },
+      {
+        "id": 4,
+        "lang": "shadcn/ui"
+      }
+    ]
+  },
+  {
     "id": 10,
     "year": "2024",
     "wlinks": [
@@ -14,7 +49,7 @@
     "langs": [
       {
         "id": 1,
-        "lang": "React"
+        "lang": "React.JS"
       },
       {
         "id": 2,
@@ -99,7 +134,7 @@
     "langs": [
       {
         "id": 1,
-        "lang": "React"
+        "lang": "React.JS"
       },
       {
         "id": 2,
